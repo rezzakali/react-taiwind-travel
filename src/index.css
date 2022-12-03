@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #5451e5;
+  --primary-light: #789dff;
+}
+
+.icon {
+  color: var(--primary-dark);
+}
+
+@layer base {
+  li {
+    @apply p-4;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+  }
+  .icon {
+    @apply text-3xl cursor-pointer;
+  }
+}
